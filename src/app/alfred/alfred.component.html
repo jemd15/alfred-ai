@@ -1,0 +1,19 @@
+<mat-grid-list cols="1" rowHeight="100vh">
+  <mat-grid-tile>
+    <mat-card>
+      <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg">
+      <mat-card-content>
+        <mat-grid-list cols="1" rowHeight="70px">
+          <mat-grid-tile>
+            <button mat-icon-button [color]="mic.color" (click)="record()">
+              <mat-icon>mic</mat-icon>
+            </button>
+          </mat-grid-tile>
+          <mat-grid-tile>
+            <p>{{textMessage}}</p>
+          </mat-grid-tile>
+        </mat-grid-list>
+      </mat-card-content>
+    </mat-card>
+  </mat-grid-tile>
+</mat-grid-list>
